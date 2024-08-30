@@ -12,11 +12,12 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-    origin: process.env.CLIENT_URL, // Your client URL
-    credentials: true, // Allow credentials
-    methods: 'GET,POST,PUT,DELETE,OPTIONS', // Allowed methods
-    allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
-}));
+    origin: process.env.CLIENT_URL || 'http://localhost:5173', // Update this to your React app's URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'], // Add any custom headers you expect
+    credentials: true
+  }));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // For parsing URL-encoded data
