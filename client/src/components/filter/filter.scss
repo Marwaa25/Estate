@@ -6,6 +6,9 @@
   h1 {
     font-weight: 300;
     font-size: 24px;
+    color: rgb(37, 37, 37);
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .item {
@@ -14,14 +17,16 @@
     gap: 2px;
 
     label {
-      font-size: 10px;
+      font-size: 15px;
+      color: rgb(72, 71, 71);
+      margin-bottom: 10px;
     }
 
     input,
     select {
       width: 100px;
       padding: 10px;
-      border: 1px solid #e0e0e0;
+      border: 1px solid #3e7a75;
       border-radius: 5px;
       font-size: 14px;
     }
@@ -42,9 +47,12 @@
     button {
       width: 100px;
       padding: 10px;
+      height: 45px;
+      margin-top: 28px;
       border: none;
+      border-radius: 5px;
       cursor: pointer;
-      background-color: #fece51;
+      background-color: #548683;
 
       img {
         width: 24px;
